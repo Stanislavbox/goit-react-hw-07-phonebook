@@ -1,0 +1,44 @@
+.form_contact {
+  width: 350px;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.form_contact:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.form_label {
+  display: block;
+  font-size: 16px;
+}
+
+.form_input {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form_input:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.form_button {
+  display: block;
+  background-color: white;
+  margin: 5px;
+  padding: 7px;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow, color, background-color 0.3s ease-in-out;
+}
+
+.form_button:hover {
+  background-color: black;
+  color: white;
+}

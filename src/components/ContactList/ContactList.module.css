@@ -1,0 +1,41 @@
+.contact_List{
+  width: 350px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact_List:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+
+.contact_item:not(:last-child){
+  margin-bottom: 12px;
+}
+
+.contact_button {
+  background-color: white;
+  padding: 7px;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow, color, background-color 0.3s ease-in-out;
+}
+
+.contact_button:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact__message{
+text-align: center;
+}

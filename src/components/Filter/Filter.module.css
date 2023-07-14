@@ -1,0 +1,16 @@
+.filter_label{
+  display: block;
+  font-size: 16px;
+}
+
+.filter_input {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter_input:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
