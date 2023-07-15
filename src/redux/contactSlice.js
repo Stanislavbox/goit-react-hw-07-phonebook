@@ -45,6 +45,12 @@ const handleRejected = (state, action) => {
   state.error = action.payload;
 };
 
+const handleFulfilled = (state, action) => {
+  state.isLoading = false;
+  state.error = null;
+  state.items = action.payload;
+}
+
 const initialData = { items: [], isLoading: false, error: null };
 
 const contactSlice = createSlice({
@@ -52,25 +58,13 @@ const contactSlice = createSlice({
   initialState: initialData,
   extraReducers: {
     [fetchContacts.pending]: handlePending,
-    [fetchContacts.fulfilled](state, action) {
-      state.isLoading = false;
-      state.error = null;
-      state.items = action.payload;
-    },
+    [fetchContacts.fulfilled]: handleFulfilled,
     [fetchContacts.rejected]: handleRejected,
     [addContact.pending]: handlePending,
-    [addContact.fulfilled](state, action) {
-      state.isLoading = false;
-      state.error = null;
-      state.items = action.payload;
-    },
+    [addContact.fulfilled]: handleFulfilled,
     [addContact.rejected]: handleRejected,
     [deleteContact.pending]: handlePending,
-    [deleteContact.fulfilled](state, action) {
-      state.isLoading = false;
-      state.error = null;
-      state.items = action.payload;
-    },
+    [deleteContact.fulfilled]: handleFulfilled,
     [deleteContact.rejected]: handleRejected,
   },
 });

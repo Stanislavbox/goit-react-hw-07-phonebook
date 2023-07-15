@@ -12,7 +12,7 @@ export const Filter = () => {
   };
 
   return (
-    <>
+    <div className={css.filter_container}>
       <label className={css.filter_label} htmlFor="example filter">
         Find contacts by name
       </label>
@@ -23,6 +23,6 @@ export const Filter = () => {
         value={value}
         onChange={changeFilter}
       />
-    </>
+    </div>
   );
 };
